@@ -23,7 +23,7 @@ const Add = () => {
   const submitForm = async (e) => {
     e.preventDefault();
     await axios
-      .post("http://localhost:8000/api/create", user)
+      .post("https://crud-app-q7ko.onrender.com/api/create", user)
       .then((response) => {
         console.log(response);
         toast.success("User Created Successfully", { position: "top-right" });

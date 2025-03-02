@@ -23,7 +23,9 @@ const User = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await axios.get("http://localhost:8000/api/getAll");
+      const response = await axios.get(
+        "https://crud-app-q7ko.onrender.com/api/getAll"
+      );
       setUsers(response.data);
     };
     fetchData();
